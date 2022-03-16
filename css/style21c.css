@@ -1,0 +1,610 @@
+/*
+ Theme Name:   Twenty Twenty-One Child
+ Theme URI:    https://diviextended.com/
+ Description:  A child theme of Twenty Twenty-One WordPress theme.
+ Author:       Elicus Technologies
+ Author URI:   https://elicus.com
+ Template:     twentytwentyone
+ Version:      1.0.8
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* @import url("../twentytwentyone/style.css"); */
+
+body{background:white;}
+.site-name {
+    text-align: center;
+    padding: 20px;
+}
+
+/* DARK MODE */
+#app.darkmode, body.darkmode {
+    background: #0e0e0e;
+}
+.darkmode .keyboard {
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+}
+.darkmode .day-label {
+    color: white;
+}
+.darkmode .letter-box .letter {
+    color: white;
+}
+.darkmode .key, .darkmode .key.delete {
+    background: #7e7c7c;
+    color: white;
+}
+
+.darkmode .key.wrong{
+    background: #4c4c4c;
+}
+
+.darkmode a {
+    color: #6dc36d;
+}
+.darkmode .modal {
+    background: black;
+    }
+.darkmode .notice {
+    background: rgb(76 76 76);
+}
+.darkmode td.levels {
+    color: white;
+}
+
+.darkmode .archive-table th {
+    padding: 5px 10px;
+    background: #4c4c4c;
+    color: white;
+}
+
+.darkmode .row-index .letter-box.wrong{
+    background:#4c4c4c;
+}
+
+.darkmode .archive-table td {
+    border: solid 1px #4c4c4c;
+}
+.darkmode .progress-bar {
+    border-color: #4c4c4c;
+}
+.darkmode .settings {
+    background: #3c3c3c;
+}
+.darkmode .setting a { color:white;}
+.darkmode #feedback-box, .darkmode #feedback-email {
+    background: #6c6c6c;
+    color: white;
+}
+.darkmode #feedback-box::placeholder, .darkmode #feedback-email::placeholder {
+    color: #acacac;
+    opacity: 1;
+}
+
+.darkmode #feedback-box::placeholder, .darkmode #feedback-email:-ms-input-placeholder {
+    color: #acacac;
+}
+
+.darkmode #feedback-box::placeholder, .darkmode #feedback-email::-ms-input-placeholder {
+    color: #acacac;
+}
+.darkmode #bg{
+    background:#1a1a1a;
+    color:white;
+}
+.darkmode #log-in-modal {
+    color: white;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    background:#ececec;
+    margin:0px;
+    padding:0px;
+}
+#app {
+    padding-top:10px;
+    min-height: calc(100vh - 10px);
+}
+.ad-show{display:none;}
+.amazon-ad {
+    padding: 20px 0px;
+}
+.amazon-ad.game-completed {
+    margin-bottom: 30vh;
+}
+.archive-table{
+    text-align: center;
+    margin: 0 auto;
+}
+.archive-table td {
+    padding: 15px;
+    border: solid 1px #bbbaba;
+}
+.archive-table td.cleared {
+    border: solid 1px #2caf2c;
+}
+.archive-table td.failed {
+    border: solid 1px #af2c2c;
+}
+.archive-table th {
+    padding: 5px 10px;
+    background: #bbbaba;
+    color: black;
+}
+.archive-table td.levels, .archive-table td.status {
+    width: 17.5%;
+}
+.notice {
+    background: rgb(236, 236, 236);
+    padding: 10px;
+    margin: 10px 20px;
+}
+.start-button{
+    background:#008f1f;
+    color:white;
+    padding: 10px 20px;
+    border:none;
+    border-radius:50px;
+    font-size:30px;
+    cursor:pointer;
+}
+#copy_input {
+    height: 0px;
+    line-height: 0px;
+    position: fixed;
+    top: 0px;
+    left: -1000px;
+}
+#newPuzzle input {
+    display: block;
+    font-size: 20px;
+    border: solid 1px #cecece;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#newPuzzle label {
+    display:block;
+    padding:10px 0px;
+}
+#newPuzzle {
+    max-width:200px;
+    width:100%;
+    margin:0 auto;
+    text-align:left;
+    font-size:18px;
+    margin-bottom:20px;
+}
+#bg {
+    text-align: center;max-width: 700px;width: 100%;margin: 0px auto;background: white;border-radius: 10px;
+    box-shadow: 0px 4px 11px 5px #0000001f;
+}
+input[type="submit"]{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    background: none;
+}
+#loginform label {
+    display: block;
+}
+#user_login, #user_pass {
+    border: solid 2px #d9d9d9;
+    padding: 5px;
+    margin: 10px 0px;
+    width:calc(100% - 14px);
+    display: inline-block;
+}
+#wp-submit {
+    background: #2caf2c;
+    width: 100%;
+    -webkit-appearance: none;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+#feedback-email{
+    width:100%;
+    max-width:300px;
+    font-size: 20px;
+    font-family: 'Varela Round';
+    padding: 10px;
+    border: solid 1px #c7c7c7;
+    margin-bottom: 5px;
+}
+#feedback-box{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Varela Round';
+    padding: 10px;
+    height: 100%;
+    max-height: 100px;
+    border: solid 1px #c7c7c7;
+    box-sizing:border-box;
+}
+.feedback-container{
+    transition: .5s;
+    box-sizing:border-box;
+}
+.feedback-container.feedback-submitted{
+    height: 0px;
+    overflow:hidden;
+}
+#feedback-submit {
+    background: #009900;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: 'Varela Round';
+    font-size:18px;
+}
+#puzzle-link {
+    font-size: 24px;
+    margin: 20px 20px;
+    padding: 5px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+.cleared {
+    background:#2caf2c;
+    color:white;
+}
+.failed {
+    background:#af2c2c;
+    color:white;
+}
+.board{
+    text-align:center;
+    padding-bottom:21vh;
+}
+.row-guess .letter-box{
+    background: #ececec;
+}
+.letter-box {
+    border: solid 1px #cecece;
+    height: calc(19vw - 18px);
+    width: calc(19vw - 18px);
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0px 2px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    text-align: center;
+    transition:.2s;
+    color:#000;
+}
+.letter-box .letter{
+    font-size: 34px;
+    line-height:27px;
+    margin: 13px 0px 11px;
+    display: block;
+}
+.row-index .letter-box.wrong {
+    background: #7e7c7c;
+    color: white;
+}
+.row-index .letter-box.correct {
+    background: #008f1f;
+    color: white;
+}
+.mode-colorblind .row-index .letter-box.correct {
+    background: #ff8d00;
+    color: white;
+}
+.row-index .letter-box.misplaced {
+    background: #d1ad47;
+    color: white;
+}
+.mode-colorblind .row-index .letter-box.misplaced {
+    background: #5894cf;
+}
+.loading .row-index .letter-box {
+    color: #fff;
+    background:white;
+}
+.row-index .letter-box:nth-child(1){
+    transition-delay:150ms;
+}
+.row-index .letter-box:nth-child(2){
+    transition-delay:300ms;
+}
+.row-index .letter-box:nth-child(3){
+    transition-delay:450ms;
+}
+.row-index .letter-box:nth-child(4){
+    transition-delay:600ms;
+}
+.row-index .letter-box:nth-child(5){
+    transition-delay:750ms;
+}
+.row-index .letter-box:nth-child(6){
+    transition-delay:900ms;
+}
+.keyboard {
+    text-align:center;
+    border-top: solid 1px #c7c7c7;
+}
+.key {
+    display: inline-flex;
+    text-align: center;
+    width: calc(10% - 4px);
+    border: solid 0px;
+    background: #c7c7c7;
+    font-size: 20px;
+    user-select: none;
+    height: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+    margin: 2px 2px;
+    transition: background-color 1.25s, color 1.25s;
+}
+.key:active {
+    background: #aeaeae;
+    transition:0s;
+}
+.key.delete{
+    background:#9d9d9d;
+    color:white;
+}
+.key.enter {
+    background: #009900;
+    color: white;
+}
+.key span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.key.misplaced, .key.wrong, .key.correct {
+    color: white;
+}
+.board{height:70vh;}
+.keyboard {
+    position: fixed;
+    bottom: 0px;
+    width: calc(100% - 10px);
+    left: 0px;
+    padding: 0px 5px 5px;
+    background: #ececec;
+}
+.keyboard .row {
+    height: 7vh;
+    min-height: 50px;
+    max-width: 700px;
+    margin: 4px auto;
+}
+.correct, .key.correct {
+    background: #008f1f;
+}
+.mode-colorblind .correct {
+    background: #ff8d00;
+}
+.misplaced, .key.misplaced {
+    background: #d1ad47;
+}
+.mode-colorblind .misplaced {
+    background: #5894cf;
+}
+.wrong, .key.wrong {
+    background: #7e7c7c;
+}
+.back-button {
+    cursor:pointer;
+    text-decoration: none;
+    padding: 0px 5px;
+    user-select: none;
+    color: white;
+    border-radius: 5px;
+}
+.share-button {
+    background: #75d389;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.share-button:hover{
+    background: #54a766;
+    cursor:pointer;
+}
+.board-button {
+    background: #c7c7c7;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.board-button:hover{
+    background: #aeaeae;
+    cursor:pointer;
+}
+.grid.invalid-word .letter-box {
+    border: solid 1px red;
+    transition: 0.2s;
+    box-shadow:0px 0px 5px red;
+}
+#game-header{
+    background: #4c4c4c;color: white;font-size:26px;padding: 10px;margin: 0px 0px;display: block;border-radius: 10px 10px 0px 0px;
+}
+.free-clout{
+    position: fixed;
+    bottom: 0px;
+    width: calc(100% - 40px);
+    max-width: 768px;
+    color: #707070;
+    font-size: 14px;
+    text-align: center;
+}
+#settings-icon{
+    height:18px;
+    margin-left:5px;
+    cursor:pointer;
+}
+.day-label{
+    text-align:center;
+}
+.google_ad {
+    padding:20px 0;
+}
+.settings {
+    background: #ececec;
+    position: fixed;
+    font-size:20px;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    text-align:left;
+}
+.settings .setting:last-child{
+    border-bottom: none;
+}
+.setting {
+    border-bottom: solid 1px #c7c7c7;
+    padding: 20px 0px;
+}
+.settings-inner{
+    padding: 40px 20px;
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+.setting input[type=checkbox] {
+    float: right;
+    margin-right: 0px;
+}
+.settings-close-button{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 34px;
+    cursor:pointer;
+    user-select:none;
+}
+.progress-bar {
+    width: calc(100% - 210px);
+    display: inline-block;
+    margin: 5px 0px;
+    height: 20px;
+    border: solid 1px #bbbaba;
+    border-radius: 0px;
+    background: #4c4c4c;
+}
+.progress-completed {
+    width: 0%;
+    transition:2s;
+    height: 20px;
+    background: #2caf2c;
+    border-radius: 0px;
+}
+.progress-label{
+    width: 160px;
+    text-align: center;
+    display: inline-block;
+}
+.progress-text {
+    color: white;
+    padding:0px 10px;
+}
+.setting a { color:black;}
+.modal-bg {
+    backdrop-filter: blur(5px);
+    background: #00000030;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:9;
+    text-align:left;
+}
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #00000078;
+    min-width: 240px;
+    position:relative;
+}
+.modal-close {
+    position: absolute;
+    right: -11px;
+    top: -11px;
+    font-size: 22px;
+    color: white;
+    background: black;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 2px;
+    user-select: none;
+    cursor: pointer;
+    border: solid 1px white;
+    box-shadow: 0px 0px 5px black;
+}
+.login-form label {display:block;}
+.login-form label span {
+    display: block;
+}
+.login-form input {
+    border: solid 2px #d9d9d9;
+    padding: 5px;
+    margin: 10px 0px;
+    width: 100%;
+    color:black;
+}
+.login-form input[type="submit"]{
+    color:white;
+    border:none;
+    background: #2caf2c;
+}
+.error-box{
+    color:red;
+}
+[v-cloak] {display:none;}
+@media screen and (max-height:700px){
+    .letter-box{max-height:40px;max-width:40px;}
+    .letter-box .letter{font-size: 24;line-height: 27px;margin: 8px 0px 11px;display: block;}
+}
+@media screen and (max-height:630px){
+    .letter-box {
+        max-height: 30px;
+        max-width: 30px;
+        margin: 1px;
+    }
+    .letter-box .letter {
+        margin: 3px 0px 0px;
+    }
+}
+@media screen and (max-width:450px){
+    .progress-label, .progress-bar {
+        display: block;
+        width: 100%;
+    }
+}
+@media screen and (max-width:370px){
+    #game-header {font-size:22px;}
+    #settings-icon{
+        height:18px;
+    }
+}
